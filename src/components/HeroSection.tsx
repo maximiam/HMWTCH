@@ -65,13 +65,17 @@ export default function HeroSection() {
           "Jump Much. Hit a number. Join the question."
         </p>
 
-        {/* Animated character */}
-        <div className="relative inline-block mb-12">
-          <div className="animate-jump">
-            <div className="text-7xl">🐕</div>
+        {/* Game art preview */}
+        <div className="relative inline-block mb-8">
+          <div className="w-64 h-48 md:w-80 md:h-56 rounded-2xl overflow-hidden border border-violet-500/30 shadow-2xl shadow-violet-500/20 animate-float">
+            <img 
+              src="https://image.qwenlm.ai/generated-images/f3b27366-0ef4-45d3-84a6-db4e32f9e1ff/_result.png" 
+              alt="MUCH JUMP game preview - dog jumping on candle platforms"
+              className="w-full h-full object-cover"
+            />
           </div>
-          {/* Trail effect */}
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-16 h-2 bg-violet-500/20 rounded-full blur-sm" />
+          {/* Glow effect */}
+          <div className="absolute -inset-4 bg-violet-500/10 rounded-3xl blur-xl -z-10" />
         </div>
 
         {/* Quick stats */}
